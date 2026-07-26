@@ -3,11 +3,11 @@ const ContactSection = () => {
     <section id="contact" className="contact-section">
       <div>
         <p className="eyebrow">Contact</p>
-        <h2>Parlons de votre besoin technique.</h2>
+        <h2>Parlons de votre projet electrique ou industriel.</h2>
         <p>
           Decrivez le contexte, les contraintes et l'objectif attendu. ALCATECH
-          pourra vous proposer une premiere lecture du sujet et les prochaines
-          etapes utiles.
+          peut vous aider a clarifier le besoin, organiser les priorites et
+          preparer les prochaines decisions techniques.
         </p>
       </div>
       <a className="button primary" href="mailto:contact@alcatech.fr">
