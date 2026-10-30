@@ -29,5 +29,9 @@ test("renders development preview metadata", async () => {
     response.headers.get("content-type") ?? "",
     /^text\/html\b/i,
   );
-  assert.match(await response.text(), developmentPreviewMeta);
+  const html = await response.text();
+  assert.match(html, developmentPreviewMeta);
+  assert.match(html, /https:\/\/alcatech-ingenierie\.fr\//);
+  assert.match(html, /mailto:contact@alcatech-ingenierie\.fr/);
+  assert.doesNotMatch(html, /43 avenue Lacassagne/);
 });

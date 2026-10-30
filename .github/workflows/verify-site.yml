@@ -1,0 +1,31 @@
+name: Vérification du site ALCATECH
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Installer Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Installer les dépendances
+        run: npm ci --no-audit --no-fund
+
+      - name: Construire le site
+        run: npm run build
+
+      - name: Tester le rendu HTML et les coordonnées
+        run: node --test tests/rendered-html.test.mjs
