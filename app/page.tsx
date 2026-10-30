@@ -99,8 +99,6 @@ export default function Home() {
     ],
     address: {
       "@type": "PostalAddress",
-      streetAddress: "43 avenue Lacassagne",
-      postalCode: "69003",
       addressLocality: "Lyon",
       addressCountry: "FR",
     },
@@ -228,14 +226,14 @@ export default function Home() {
         <p className="eyebrow"><span /> Un projet, un besoin, une question ?</p>
         <h2>Parlons de votre<br /><em>prochain défi.</em></h2>
         <p>Vous recherchez une expertise en ingénierie électrique industrielle ? Présentez-nous votre projet et échangeons sur la meilleure façon de le faire avancer.</p>
-        <a className="button primary" href="mailto:contact@alcatech.fr?subject=Demande%20de%20contact%20—%20Projet%20électrique">contact@alcatech.fr <Arrow /></a>
+        <a className="button primary" href="mailto:contact@alcatech-ingenierie.fr?subject=Demande%20de%20contact%20—%20Projet%20électrique">contact@alcatech-ingenierie.fr <Arrow /></a>
       </section>
 
       <footer>
         <div className="footer-brand"><Image src="/alcatech-logo.svg" alt="ALCATECH" width={700} height={320} /><p>Engineering · Industry · AI</p></div>
         <div><strong>Navigation</strong><a href="#expertises">Expertises</a><a href="#approche">Approche</a><a href="#secteurs">Secteurs</a></div>
-        <div><strong>Localisation</strong><p>43 avenue Lacassagne<br />69003 Lyon</p><p>Interventions en France et à l&apos;étranger</p></div>
-        <div><strong>Contact</strong><a href="mailto:contact@alcatech.fr">contact@alcatech.fr</a></div>
+        <div><strong>Localisation</strong><p>Lyon, France</p><p>Interventions en France et à l&apos;étranger</p></div>
+        <div><strong>Contact</strong><a href="mailto:contact@alcatech-ingenierie.fr">contact@alcatech-ingenierie.fr</a></div>
         <p className="copyright">© {new Date().getFullYear()} ALCATECH. Tous droits réservés. <span>Ingénierie électrique industrielle en France et à l&apos;international</span></p>
       </footer>
     </main>
