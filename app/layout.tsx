@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://alcatech.fr"),
+  metadataBase: new URL("https://alcatech-ingenierie.fr"),
   title: { default: "ALCATECH | Ingénierie électrique en France et à l'international", template: "%s | ALCATECH" },
   description: "ALCATECH, bureau d'études en ingénierie électrique à Lyon : études HTA/BT, projets industriels, essais, mise en service et assistance technique en France et à l'étranger.",
   keywords: ["ingénierie électrique", "bureau d'études électrique", "ingénieur électricité industrielle", "études HTA BT", "mise en service électrique", "assistance technique électrique", "Lyon", "France", "international"],
